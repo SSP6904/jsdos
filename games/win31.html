@@ -4,8 +4,8 @@
     <title>Windows 3.1</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="src\js-dos.js"></script>
-    <link href="src\js-dos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/js-dos@7.5.0/dist/js-dos.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/js-dos@7.5.0/dist/js-dos.min.css" rel="stylesheet">
     <style>
        html, body, #jsdos {
              width: 100%;
@@ -18,9 +18,9 @@
 <body>
 <div id="jsdos"></div>
 <script type="text/javascript">
- emulators.pathPrefix = "src/";
-         Dos(document.getElementById("jsdos"))
-             .run("https://cdn.ttnrtsite.me/Win31.jsdos");
+    emulators.pathPrefix = "src/";
+    Dos(document.getElementById("jsdos"))
+        .run("https://cdn.ttnrtsite.me/Win31.jsdos");
 </script>
 </body>
 </html>
