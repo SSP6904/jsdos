@@ -12,12 +12,27 @@
       margin-top: 20px;
     }
   </style>
+  <script>
+    // Set theme to the user's preferred color scheme
+    function updateTheme() {
+      const colorMode = window.matchMedia("(prefers-color-scheme: dark)").matches ?
+        "dark" :
+        "light";
+      document.querySelector("html").setAttribute("data-bs-theme", colorMode);
+    }
+  
+    // Set theme on load
+    updateTheme()
+  
+    // Update theme when the preferred scheme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateTheme)
+  </script>
 </head>
 <body>
   <div id="app" class="container">
     <h1>DOS Games in browser!</h1>
     <p>This website is only about js-dos and the games it runs with it.</p>
-    <p>Select game in the cards below to get started!</p>
+    <p>Select a game in the cards below to get started!</p>
     <br />
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
       <div class="col">
