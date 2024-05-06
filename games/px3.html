@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PX3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/js-dos@7.5.0/dist/js-dos.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/js-dos@7.5.0/dist/js-dos.min.css" rel="stylesheet">
+    <style>
+       html, body, #jsdos {
+             width: 100%;
+             height: 100%;
+             margin: 0;
+             padding: 0;
+      }     
+    </style>
+</head>
+<body>
+<div id="jsdos"></div>
+<script type="text/javascript">
+    emulators.pathPrefix = "src/";
+    Dos(document.getElementById("jsdos"))
+        .run("/jsdos/data/px3.jsdos");
+</script>
+</body>
+</html>
