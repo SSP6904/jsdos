@@ -1,115 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>JS-DOS Games</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/js/bootstrap.bundle.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css">
-  <style>
-    #app {
-      padding: 2em;
-      margin-top: 20px;
-    }
-  </style>
-  <script>
-    // Set theme to the user's preferred color scheme
-    function updateTheme() {
-      const colorMode = window.matchMedia("(prefers-color-scheme: dark)").matches ?
-        "dark" :
-        "light";
-      document.querySelector("html").setAttribute("data-bs-theme", colorMode);
-    }
-  
-    // Set theme on load
-    updateTheme()
-  
-    // Update theme when the preferred scheme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateTheme)
-  </script>
-</head>
-<body>
-  <div id="app" class="container">
-    <h1>DOS Games in browser!</h1>
-    <p>This website is only about js-dos and the games it runs with it.</p>
-    <p>Select a game in the cards below to get started!</p>
-    <br />
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="images/Digger.png" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Digger</h5>
-            <p class="card-text">The classic game!</p>
-            <a href="games/digger.html" class="btn btn-primary">Start!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <img src="images/NotFound.png" class="card-img-top" width="64px">
-            <h5 class="card-title">Test app</h5>
-            <p class="card-text">Check the app if it's working or not</p>
-            <a href="games/test-app.html" class="btn btn-primary">Start!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="images/Doom.png" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Doom</h5>
-            <p class="card-text">It's the version 3</p>
-            <a href="games/doom3.html" class="btn btn-primary">Start!</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br />
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="images/Win31.png" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Windows 3.1</h5>
-            <p class="card-text">Maybe has curror?</p>
-            <a href="games/win31.html" class="btn btn-primary">Start!</a>
-          </div>
-        </div>
-      </div>
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <img src="images/MSDOS.jpg" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">MS-DOS</h5>
-          <p class="card-text">The normal version</p>
-          <a href="games/msdos.html" class="btn btn-primary">Start!</a>
-        </div>
-      </div>
-   </div>
-   <div class="col">
-    <div class="card" style="width: 18rem;">
-      <img src="images/xtc-player.png" class="card-img-top">
-      <div class="card-body">
-        <h5 class="card-title">XTC-Player</h5>
-        <p class="card-text">Tracker Music</p>
-        <a href="games/xtcplayer.html" class="btn btn-primary">Start!</a>
-      </div>
-    </div>
-   </div>
-   <br />
-   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-     <div class="col">
-       <div class="card" style="width: 18rem;">
-         <img src="images/NotFound.png" class="card-img-top">
-         <div class="card-body">
-           <h5 class="card-title">Planet X3</h5>
-           <p class="card-text">Great game to play!</p>
-           <a href="games/px3.html" class="btn btn-primary">Start!</a>
-         </div>
-       </div>
-     </div>
-  </div>
-</body>
-</html>
+---
+layout: default
+title: Home
+---
+<h1>JSDos games</h1>
+<p>Fun DOS games you can play in your browser!</p>
+<br />
+<div class="card-group">
+<div class="card">
+<img src="images/Digger.png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Digger</h5>
+<p class="card-text">The classic game!</p>
+<a href="games/digger.html" class="btn btn-primary">Start!</a>
+</div>
+</div>
+<div class="card">
+<img src="images/NotFound.png" class="card-img-top bg-dark" width="64px">
+<div class="card-body">
+<h5 class="card-title">Test app</h5>
+<p class="card-text">Check the app if it's working or not</p>
+<a href="games/test-app.html" class="btn btn-primary">Start!</a>
+</div>
+</div>
+<div class="card">
+<img src="images/Doom.png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Doom</h5>
+<p class="card-text">It's the version 3</p>
+<a href="games/doom3.html" class="btn btn-primary">Start!</a>
+</div>
+</div>
+<div class="card">
+<img src="images/Win31.png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">Windows 3.1</h5>
+<p class="card-text">Maybe has curror?</p>
+<a href="games/win31.html" class="btn btn-primary">Start!</a>
+</div>
+</div>
+<div class="card">
+<img src="images/xtc-player.png" class="card-img-top">
+<div class="card-body">
+<h5 class="card-title">XTC-Player</h5>
+<p class="card-text">Tracker Music</p>
+<a href="games/xtcplayer.html" class="btn btn-primary">Start!</a>
+</div>
+</div>
+<div class="card">
+<img src="images/px3.png" class="card-img-top bg-dark">
+<div class="card-body">
+<h5 class="card-title">Planet X3</h5>
+<p class="card-text">Great game to play!</p>
+<a href="games/px3.html" class="btn btn-primary">Start!</a>
+</div>
+</div>
+</div>
